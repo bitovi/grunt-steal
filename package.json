@@ -1,7 +1,11 @@
 {
-	"name": "grunt-steal",
+	"name": "grunt-steal-node",
 	"version": "0.2.2",
-	"author": "Alexis Abril <alexis@bitovi.com>",
+	"author": {
+		"name": "Bitovi",
+		"email" : "contact@bitovi.com",
+		"web" : "http://bitovi.com/"
+	},
 	"description": "Grunt task for running steal build scripts",
 	"repository": {
 		"type": "git",

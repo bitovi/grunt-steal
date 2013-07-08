@@ -4,15 +4,15 @@
 
 A task to allow for ease of running multiple [StealJS](http://javascriptmvc.com/docs.html#!stealjs "StealJS") build scripts.
 
-Currently, this assumes you have steal as a subdirectory/submodule placed in the root of your UI project and configured via `steal/js steal/make.js`.
+Currently, this assumes you have steal as a subdirectory/submodule placed in the root of your UI project.`.
 
 ## Getting Started
 
-Install this plugin with: `npm install grunt-steal`
+Install this plugin with: `npm install grunt-steal-node`
 
-Then add this line to your project's `grunt.js` file:
+Then add this line to your project's `Gruntfile.js` file:
 
-	grunt.loadNpmTasks('grunt-steal');
+	grunt.loadNpmTasks('grunt-steal-node');
 
 ### Overview
 
@@ -32,23 +32,14 @@ Specify all build scripts via string or object. *See example below*
 
 The configuration below specifies the steal root, where the `js` runner exists, then runs each build script.
 
-	steal: {
-		js: 'path/to/steal/root',
-		build: ['path/to/build.js', 'path/to/app2/build.js']
-	}
-
-You can also provide override options for your prebuilt build scripts.
-
-	steal: {
-		build: [{
-			src: 'path/to/build.js',
-			to: 'some/new/dir',
-			compressor: 'uglify'
-		}]
-	}
-
-*Note: The src and other path options are relative to the `steal` root, not the gruntfile*
-
-*Note: option overrides are in an alpha release of StealJS*
-
-These will override the options specified within the build script.
+```javascript
+  steal: {
+    options: {
+      compressor: 'uglify'
+    },
+    dist: {
+      src: 'test/fixtures/index.html',
+      dest: 'dist'
+    }
+  }
+```
