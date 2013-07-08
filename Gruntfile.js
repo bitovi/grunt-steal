@@ -20,8 +20,6 @@ module.exports = function(grunt) {
 			}
     },
 
-    clean: ['tmp'],
-
     steal: {
 			options: {
 				compressor: 'uglify'
@@ -40,20 +38,21 @@ module.exports = function(grunt) {
     },
 
     nodeunit: {
-      tasks: ['test/*_test.js']
+      all: ['test/*_test.js']
     }
   });
 
   grunt.loadTasks('tasks');
-  grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  /*grunt.renameTask('test', 'nodeunit');
-  grunt.registerTask('test', 'clean steal concat nodeunit');*/
+  grunt.registerTask('test', ['steal', 'nodeunit']);
+
+	// Linting
+	grunt.registerTask('lint', ['jshint']);
 
   // Default task.
-	grunt.registerTask('lint', ['jshint']);
   grunt.registerTask('default', ['lint', 'test']);
 };
