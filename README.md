@@ -1,8 +1,8 @@
 # grunt-steal
 
-[![Build Status](https://secure.travis-ci.org/alexisabril/grunt-steal.png)](http://travis-ci.org/alexisabril/grunt-steal)
+[![Build Status](https://secure.travis-ci.org/matthewp/grunt-steal.png)](http://travis-ci.org/matthewp/grunt-steal)
 
-A task to allow for ease of running multiple [StealJS](http://javascriptmvc.com/docs.html#!stealjs "StealJS") build scripts.
+A task to allow for ease of running multiple [Steal](http://javascriptmvc.com/docs.html#!stealjs "StealJS") build scripts.
 
 Currently, this assumes you have steal as a subdirectory/submodule placed in the root of your UI project.`.
 
@@ -13,7 +13,7 @@ Install this plugin with: `npm install grunt-steal-node`
 Then add this line to your project's `Gruntfile.js` file:
 
 ```javascript
-	grunt.loadNpmTasks('grunt-steal-node');
+grunt.loadNpmTasks('grunt-steal-node');
 ```
 
 ### Overview
