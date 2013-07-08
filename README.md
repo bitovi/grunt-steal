@@ -12,21 +12,13 @@ Install this plugin with: `npm install grunt-steal-node`
 
 Then add this line to your project's `Gruntfile.js` file:
 
+```javascript
 	grunt.loadNpmTasks('grunt-steal-node');
+```
 
 ### Overview
 
 Specify a `steal` section in your gruntfile. This will allow configurations for overriding options in the specified build scripts.
-
-### Parameters
-
-#### js `string`
-
-Optional - Specify a path to the steal root. Defaults to gruntfile directory.
-
-#### build `array`
-
-Specify all build scripts via string or object. *See example below*
 
 ### Sample config
 
@@ -35,11 +27,25 @@ The configuration below specifies the steal root, where the `js` runner exists, 
 ```javascript
   steal: {
     options: {
-      compressor: 'uglify'
+      compressor: "uglify"
     },
     dist: {
-      src: 'test/fixtures/index.html',
-      dest: 'dist'
+      src: "path/to/my/app.js",
+      dest: "out_folder"
+    }
+  }
+```
+
+Or, if you have multiple projects all sharing the same `steal`, you can add those like so:
+
+```javascript
+  steal: {
+    options: {
+      compressor: "uglify"
+    },
+    dist: {
+      "out_folder": "path/to/my/app.js",,,,
+			"other_folder": "path/to/my/second/app.js"
     }
   }
 ```
