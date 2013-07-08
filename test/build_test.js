@@ -5,8 +5,6 @@ exports.build = {
 	script: function(test) {
 		'use strict';
 
-debugger;
-
 		test.expect(1);
 
 		var actual = grunt.file.read('dist/production.js'),
