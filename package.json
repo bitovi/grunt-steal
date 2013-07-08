@@ -13,10 +13,10 @@
 		"gruntplugin"
 	],
 	"dependencies": {
-		"promised-io": "0.3.0"
+		"steal": ">= 3.3.11-pre"
 	},
 	"devDependencies": {
-		"grunt": "0.3.15",
+		"grunt": "0.4.1",
 		"grunt-contrib-clean": "0.2.0",
 		"nodeunit": "0.7.4"
 	},

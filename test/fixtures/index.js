@@ -1,1 +1,3 @@
-var foo = {};
+steal(function(){
+	var foo = {};
+});
