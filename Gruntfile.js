@@ -1,13 +1,6 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
-    lint: {
-      files: ['grunt.js', 'tasks/*.js']
-    },
-    watch: {
-      files: '<config:lint.files>',
-      tasks: 'lint'
-    },
     jshint: {
       options: {
         curly: true,
@@ -20,9 +13,11 @@ module.exports = function(grunt) {
         undef: true,
         boss: true,
         eqnull: true,
-        node: true,
-        es5: true
-      }
+        node: true
+      },
+			files: {
+				src: ['grunt.js', 'tasks/*.js']
+			}
     },
 
     clean: ['tmp'],
@@ -51,6 +46,7 @@ module.exports = function(grunt) {
 
   grunt.loadTasks('tasks');
   grunt.loadNpmTasks('grunt-contrib-clean');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
@@ -58,5 +54,6 @@ module.exports = function(grunt) {
   grunt.registerTask('test', 'clean steal concat nodeunit');*/
 
   // Default task.
-  grunt.registerTask('default', 'lint test');
+	grunt.registerTask('lint', ['jshint']);
+  grunt.registerTask('default', ['lint', 'test']);
 };

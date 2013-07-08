@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 
 		var self = this;
 		this.files.forEach(function(file){
-			var src = file.src[0]
-			  , dest = file.dest;
+			var src = file.src[0],
+				dest = file.dest;
 
 			var options = self.options({
 				to: dest,
