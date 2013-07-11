@@ -2,9 +2,10 @@
 
 [![Build Status](https://secure.travis-ci.org/matthewp/grunt-steal.png)](http://travis-ci.org/matthewp/grunt-steal)
 
-A task to allow for ease of running multiple [Steal](http://javascriptmvc.com/docs.html#!stealjs "StealJS") build scripts.
+A task to allow for ease of running multiple [Steal](http://javascriptmvc.com/docs.html#!stealjs "StealJS") builds in your project.
 
-Currently, this assumes you have steal as a subdirectory/submodule placed in the root of your UI project.`.
+This assumes that you have a `stealconfig.js` and a `steal` subfolder containing `steal.js`. If you install [steal](https://github.com/bitovi/steal) getting these prereqs is as simply as running `steal install`.
+
 
 ## Getting Started
 
@@ -18,7 +19,7 @@ grunt.loadNpmTasks('grunt-steal-node');
 
 ### Overview
 
-Specify a `steal` section in your gruntfile. This will allow configurations for overriding options in the specified build scripts.
+Specify a `steal` section in your `Gruntfile.js`. This will allow configurations for overriding options in the specified build scripts.
 
 ### Sample config
 
