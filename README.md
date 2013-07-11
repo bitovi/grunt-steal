@@ -45,8 +45,24 @@ Or, if you have multiple projects all sharing the same `steal`, you can add thos
       compressor: "uglify"
     },
     dist: {
-      "out_folder": "path/to/my/app.js",,,,
+      "out_folder": "path/to/my/app.js",
 			"other_folder": "path/to/my/second/app.js"
     }
   }
 ```
+
+## Options
+
+There are a number of options available. Specify them in the `options` section of your config.
+
+### compressor
+
+Specifies which JavaScript compressor to use. Valid options are either `closure` or `uglify` (closure is the current default).
+
+### includeSteal
+
+Signals that you want to package `steal.js` as part of the produced `production.js`. To turn on this option set it to: `includeSteal: true`.
+
+### depth
+
+Specify the `depth` for packages.
