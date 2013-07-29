@@ -1,6 +1,6 @@
 {
 	"name": "grunt-steal-node",
-	"version": "0.2.3",
+	"version": "0.2.4",
 	"author": {
 		"name": "Bitovi",
 		"email" : "contact@bitovi.com",
@@ -17,7 +17,7 @@
 		"gruntplugin"
 	],
 	"dependencies": {
-		"steal": ">= 3.3.16-pre"
+		"steal-tools": ">= 0.0.2"
 	},
 	"devDependencies": {
 		"grunt": "0.4.1",

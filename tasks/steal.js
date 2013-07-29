@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   grunt.registerMultiTask("steal", "Build your application with Steal", function() {
-		var build = require("steal").build;
+		var build = require("steal-tools").build;
 		var done = this.async();
 	
 		grunt.config.requires("steal");
