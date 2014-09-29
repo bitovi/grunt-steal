@@ -1,3 +1,7 @@
+# DEPRECATION NOTICE
+
+The Grunt task for StealJS is now hosted in [steal-tools](https://github.com/bitovi/steal-tools).  The documentation for use can be found [here](http://stealjs.com/docs/stealTools.grunt.build.html). This repository will remain up for legacy needs but won't be maintained further.
+
 # grunt-steal
 
 [![Build Status](https://secure.travis-ci.org/matthewp/grunt-steal.png)](http://travis-ci.org/matthewp/grunt-steal)
