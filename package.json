@@ -1,6 +1,6 @@
 {
   "name": "grunt-steal",
-  "version": "0.3.0.pre.0",
+  "version": "0.3.0-pre.0",
   "description": "Run steal-tools through Grunt",
   "main": "index.js",
   "directories": {
