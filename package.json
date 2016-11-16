@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "document": "bit-docs",
     "test": "grunt test"
   },
   "repository": {
@@ -28,9 +29,26 @@
     "steal-tools": "^1.0.0-rc.0"
   },
   "devDependencies": {
+    "bit-docs": "0.0.6",
     "grunt": "~0.4.1",
     "grunt-cli": "^1.2.0",
     "grunt-simple-mocha": "^0.4.1",
     "winston": "^2.2.0"
+  },
+  "bit-docs": {
+    "dependencies": {
+      "bit-docs-glob-finder": "^0.0.5",
+      "bit-docs-dev": "^0.0.3",
+      "bit-docs-js": "^0.0.3",
+      "bit-docs-generate-readme": "^0.0.8"
+    },
+    "glob": {
+      "pattern": "**/*.{js,md}",
+      "ignore": "node_modules/**/*"
+    },
+    "readme": {
+      "apis": "./docs/apis.json"
+    },
+    "parent": "grunt-steal"
   }
 }

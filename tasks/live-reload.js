@@ -5,10 +5,10 @@ module.exports = function(grunt){
 	grunt.registerMultiTask("steal-live-reload", "Start live-reload server.", function(){
 		var options = this.options();
 
-		var system = options.system;
+		var steal = options.steal;
 		var liveReloadOptions = options.liveReloadOptions || {};
 
-		liveReload(system, liveReloadOptions);
+		liveReload(steal, liveReloadOptions);
 	});
 
 };

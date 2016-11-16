@@ -18,7 +18,7 @@ describe("steal-build grunt task", function(){
 		registerBuild(grunt);
 
 		grunt.run({
-			system: {
+			steal: {
 				config: __dirname + "/config.js",
 				main: "main"
 			}
@@ -30,7 +30,7 @@ describe("steal-build grunt task", function(){
 		registerBuild(grunt);
 
 		grunt.run({
-			system: {
+			steal: {
 				config: __dirname + "/config.js",
 				main: "main_with_error"
 			}
