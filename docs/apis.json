@@ -1,0 +1,7 @@
+[
+  {"grunt-steal": [
+    "grunt-steal.build",
+    "grunt-steal.export",
+    "grunt-steal.live-reload"
+  ]}
+]
