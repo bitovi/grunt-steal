@@ -6,7 +6,7 @@ module.exports = function(grunt){
 		var done = this.async();
 		var options = this.data;
 		// make sure things look right
-		["system","outputs"].forEach(function(name){
+		["steal","outputs"].forEach(function(name){
 			if(!options[name]) {
 				grunt.fail.warn("steal-export needs a "+name+" property.");
 			}

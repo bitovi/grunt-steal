@@ -6,11 +6,11 @@ module.exports = function(grunt){
 		var done = this.async();
 		var options = this.options();
 
-		var system = options.system;
+    var steal = options.steal;
 		var buildOptions = options.buildOptions;
 
 		// Run the build with the provided options
-		var promise = build(system, buildOptions);
+		var promise = build(steal, buildOptions);
 		if(promise.then) {
 			var success = function(){
 				grunt.log.writeln("Build was successful.");
