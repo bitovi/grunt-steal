@@ -29,8 +29,8 @@
     "steal-tools": "^1.0.0-rc.0"
   },
   "devDependencies": {
-    "bit-docs": "0.0.6",
-    "grunt": "~0.4.1",
+    "bit-docs": "0.0.7",
+    "grunt": "~1.0.1",
     "grunt-cli": "^1.2.0",
     "grunt-simple-mocha": "^0.4.1",
     "winston": "^2.2.0"
