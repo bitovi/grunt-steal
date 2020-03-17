@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "bit-docs": "^0.1.0",
-    "grunt": "~1.0.1",
+    "grunt": "~1.1.0",
     "grunt-cli": "^1.2.0",
     "grunt-simple-mocha": "^0.4.1",
     "winston": "^2.2.0"
