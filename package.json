@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/stealjs/grunt-steal#readme",
   "dependencies": {
-    "steal-tools": "^2.0.11"
+    "steal-tools": "^2.3.0-pre.0"
   },
   "devDependencies": {
     "bit-docs": "^0.1.0",
